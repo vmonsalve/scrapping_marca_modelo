@@ -8,10 +8,10 @@ load_dotenv()
 
 DBA_NAME = os.getenv('DBA_NAME')
 DBA_USER = os.getenv('DBA_USER')
-DBA_PASSWORD = os.getenv('DBA_PASSWORD')
+DBA_PASS = os.getenv('DBA_PASS')
 DBA_HOST = os.getenv('DBA_HOST')
 DBA_PORT = os.getenv('DBA_PORT')
-DATABASE_URI = f'mysql+pymysql://{DBA_USER}:{DBA_PASSWORD}@{DBA_HOST}:{DBA_PORT}/{DBA_NAME}'
+DATABASE_URI = f'mysql+pymysql://{DBA_USER}:{DBA_PASS}@{DBA_HOST}:{DBA_PORT}/{DBA_NAME}'
 
 engine = create_engine(DATABASE_URI, echo=True)
 

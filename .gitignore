@@ -1,3 +1,5 @@
 .env
 Models/__pycache__
 Helpers/__pycache__
+alembic.ini
+alembic/
